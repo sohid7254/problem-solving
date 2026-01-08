@@ -60,3 +60,13 @@ function removeDuplicates(arr) {
   return number;
 }
 console.log(removeDuplicates([1, 2, 2, 3, 4, 4]));
+
+// Problem 6: Sum of All Numbers in an Array*****
+function totalNum(arr) {
+  let sum = 0;
+  for (let num of arr) {
+    sum += num;
+  }
+  return sum;
+}
+console.log(totalNum([1, 2, 3, 4]));
