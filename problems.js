@@ -37,6 +37,16 @@ function isPalindrome(str) {
 console.log(isPalindrome("madam"));
 console.log(isPalindrome("hello"));
 
-
+// Problem-4: Find the Maximum Number******
+function maxNum(char) {
+  let max = char[0];
+  for (let num of char) {
+    if (num > max) {
+      max = num;
+    }
+  }
+  return max;
+}
+console.log(maxNum([5, 1, 9, 3]));
 
 
