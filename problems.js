@@ -21,7 +21,21 @@ function countVowels(vowelCount) {
 }
 console.log(countVowels("programming"));
 
+// Problem-3: Check for Palindrome
+function reverseStr(rev) {
+    let reversed = "";
+    for (let i = rev.length - 1; i >= 0; i--) {
+        reversed += rev[i];
+    }
+    return reversed;
+}
 
+function isPalindrome(str) {
+  let reversed = reverseStr(str);
+  return str === reversed;
+}
+console.log(isPalindrome("madam"));
+console.log(isPalindrome("hello"));
 
 
 
