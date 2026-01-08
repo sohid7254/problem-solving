@@ -49,4 +49,14 @@ function maxNum(char) {
 }
 console.log(maxNum([5, 1, 9, 3]));
 
-
+// Problem 5: Remove Duplicates from an Array
+function removeDuplicates(arr) {
+  let number = [];
+  for (let num of arr) {
+    if (!number.includes(num)) {
+      number.push(num);
+    }
+  }
+  return number;
+}
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4]));
