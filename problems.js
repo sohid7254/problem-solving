@@ -8,7 +8,18 @@ function reverseString(rev) {
 }
 console.log(reverseString("hello")); 
 
-
+// Problem-2: Count Vowels in a String
+function countVowels(vowelCount) {
+  let vowels = "I have a problem";
+  let count = 0;
+  for (let char of vowelCount.toLowerCase()) {
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(countVowels("programming"));
 
 
 
